@@ -35,6 +35,8 @@ Basic service
 ```ruby
 rails g service test_service
 ```
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.03.13.png)
+
 
 Service with additional methods
 ```ruby
