@@ -1,6 +1,6 @@
 # MatasServiceGenerator
 
-> This gem creates a Service Generator file together with template and USAGE inside the lib directory.
+> This gem creates a Service Generator so you can use it as a part of rails generators.
 
 ## Installation
 
@@ -20,13 +20,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use it as any standard rails generator.
+It has optional argument that is an array of methods you wish to generate inside your service.
+Also there is an optional --module option that namespaces the class.
 
-## Development
+For more help just type:
+```ruby
+rails g service -h
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Examples:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Basic service
+```ruby
+rails g service test_service
+```
+
+Service with additional methods
+```ruby
+rails g service test_service test_method1 test_method2
+```
+
+Service with module name given
+```ruby
+rails g service test_service --module test_module
+```
+
+Service with additional methods and module name
+```ruby
+rails g service test_servicerails g service test_service method1 method2 --module test_module
+```
+
 
 ## Contributing
 
