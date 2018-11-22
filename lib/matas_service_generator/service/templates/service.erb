@@ -1,0 +1,18 @@
+<% if @module_name.present? %> module <%= @module_name.camelize %>  <% end %>
+class <%= class_name %>
+
+def initialize
+end
+
+def call
+end
+
+<% if methods.present? %> private <% end %>
+<% for method in methods %>
+  def <%= method %>
+  end
+<% end %>
+end
+<% if @module_name.present? %> end <% end %>
+
+
