@@ -37,22 +37,29 @@ rails g service test_service
 ```
 ![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.03.13.png)
 
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.03.29.png)
 
 Service with additional methods
 ```ruby
 rails g service test_service test_method1 test_method2
 ```
 
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.05.45.png)
+
 Service with module name given
 ```ruby
 rails g service test_service --module test_module
 ```
 
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.07.22.png)
+
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.07.32.png)
+
 Service with additional methods and module name
 ```ruby
-rails g service test_servicerails g service test_service method1 method2 --module test_module
+rails g service test_service method1 method2 --module test_module
 ```
-
+![Example](https://github.com/zenjara/matas_service_generator/blob/master/docs/images/Screen%20Shot%202018-11-20%20at%2014.09.40.png)
 
 ## Contributing
 
