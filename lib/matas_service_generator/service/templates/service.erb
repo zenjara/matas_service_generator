@@ -7,11 +7,11 @@
 
   <%= indent %>def call
   <%= indent %>end
-<%= "\n#{indent}  private\n" if methods.present? %>
+<%= "\n#{indent}  private" if methods.present? %>
 <%- for method in methods -%>
-    def <%= method %>
-    end
 
+    <%= indent %>def <%= method %>
+    <%= indent %>end
 <%- end -%>
 <%= indent %>end
 <%= 'end' if @module_name.present? -%>
