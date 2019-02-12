@@ -8,7 +8,7 @@
 
   <%= indent %>def call
   <%= indent %>end
-<%= "\n#{indent}  private" if methods.present? %>
+<%= "\n#{indent}  private" if methods.present? -%>
 <%- for method in methods -%>
 
   <%= indent %>def <%= method %>
