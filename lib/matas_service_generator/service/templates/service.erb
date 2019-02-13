@@ -1,18 +1,18 @@
-<%- indent = @module_name.present? ? '  ' : '' -%>
+<%- indent = module? ? '  ' : '' -%>
 # frozen_string_literal: true
 
-<%= "module #{@module_name.camelize}\n" if @module_name.present? -%>
-<%= indent %>class <%= class_name %>
+<%= "module #{@module_name.camelize}\n" if module? -%>
+<%= "#{indent}class #{class_name}" %>
   <%= indent %>def initialize
   <%= indent %>end
 
   <%= indent %>def call
   <%= indent %>end
-<%= "\n#{indent}  private" if methods.present? -%>
+<%= "\n#{indent}  private\n" if methods? -%>
 <%- for method in methods -%>
 
-  <%= indent %>def <%= method %>
+  <%= "#{indent}def #{method}" %>
   <%= indent %>end
 <%- end -%>
 <%= indent %>end
-<%= 'end' if @module_name.present? -%>
+<%= 'end' if module? -%>
